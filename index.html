@@ -29,14 +29,21 @@
                 <p id="answer-text"></p>
             </div>
             <div class="controls">
+                <button id="back-btn" class="btn btn-back hidden">Anterior</button>
                 <button id="answer-btn" class="btn btn-answer">Ver Respuesta</button>
-                <button id="next-btn" class="btn btn-next hidden">Siguiente Pregunta</button>
+                <div id="rating-controls" class="hidden">
+                    <button id="correct-btn" class="btn btn-rating-correct">Respondí Bien</button>
+                    <button id="incorrect-btn" class="btn btn-rating-incorrect">Respondí Mal</button>
+                </div>
             </div>
         </div>
         
         <div id="end-screen" class="hidden">
             <h2>¡Repaso completado!</h2>
-            <p>Has finalizado las 10 preguntas. ¡Mucho éxito en el examen!</p>
+            <div id="score-container">
+                <p id="final-score"></p>
+                <p id="final-message"></p>
+            </div>
             <button id="restart-btn" class="btn btn-start">Repasar de Nuevo</button>
         </div>
 
