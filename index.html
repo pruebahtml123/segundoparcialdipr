@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repaso para Examen - Internacional Privado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="quiz-container" id="quiz">
+        <div class="header">
+            <h1>Repaso Interactivo</h1>
+            <p>Pon a prueba tus conocimientos para el Segundo Parcial de Internacional Privado.</p>
+        </div>
+
+        <div id="start-screen">
+            <button id="start-btn" class="btn btn-start">Comenzar</button>
+        </div>
+
+        <div id="quiz-screen" class="hidden">
+            <div id="question-header">
+                <h2 id="question-counter"></h2>
+            </div>
+            <div id="question-area">
+                <p id="question-text"></p>
+            </div>
+            <div id="answer-area" class="hidden">
+                <p id="answer-text"></p>
+            </div>
+            <div class="controls">
+                <button id="answer-btn" class="btn btn-answer">Ver Respuesta</button>
+                <button id="next-btn" class="btn btn-next hidden">Siguiente Pregunta</button>
+            </div>
+        </div>
+        
+        <div id="end-screen" class="hidden">
+            <h2>¡Repaso completado!</h2>
+            <p>Has finalizado las 10 preguntas. ¡Mucho éxito en el examen!</p>
+            <button id="restart-btn" class="btn btn-start">Repasar de Nuevo</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
